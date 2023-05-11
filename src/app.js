@@ -10,7 +10,7 @@ const port = 5000
 const app = express()
 
 
-app.set("views", path.join(__dirname, "views"))
+app.set("views",  "views")
 
 app.engine(
     ".hbs",
