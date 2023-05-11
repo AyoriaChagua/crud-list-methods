@@ -1,6 +1,6 @@
-import Router from "express"
+const { Router } = require("express");
 
-export const router_products = Router()
+const router_products = Router()
 
 let products = [
     {
@@ -75,9 +75,6 @@ router_products.post('/product/:id', (req, res)=>{
         stock
     }
 
-    
-    console.log(newproduct)
-
     products.forEach((product, index)=>{
         if(product.id == id){
             products[index] = newproduct
@@ -87,3 +84,5 @@ router_products.post('/product/:id', (req, res)=>{
     res.redirect('/products')
 })
 
+
+module.exports = router_products
