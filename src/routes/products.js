@@ -46,7 +46,7 @@ router_products.get('/product/delete/:id', (req, res)=>{
             return
         }
     })
-    res.redirect("/products")
+    res.redirect("/p/products")
 })
 
 router_products.get('/product/:id', (req, res)=>{
