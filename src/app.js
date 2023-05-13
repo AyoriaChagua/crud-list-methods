@@ -1,5 +1,4 @@
 const express = require("express");
-const path = require("path");
 const { engine } = require("express-handlebars");
 const  router_products  = require("./routes/products.js");
 const  router  = require("./routes/index.js");
