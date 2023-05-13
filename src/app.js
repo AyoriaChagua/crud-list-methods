@@ -23,8 +23,7 @@ app.set("view engine", ".hbs")
 app.use(express.urlencoded({extended: false}))
 app.use(express.json())
 
-app.use("/", router)
-app.use("/p", router_products)
+app.use(router_products)
 
 
 app.listen(port, ()=>{
